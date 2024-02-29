@@ -14,7 +14,7 @@ function solveQuadrat() {
 
   if (discriminant < 0) {
     stderr.write('Уравнение не имеет корней');
-    process.exit(1);
+    process.exit(503);
   } else if (discriminant === 0) {
     const x = -b / (2 * a);
     stdout.write(`Один корень: ${x}`);
@@ -26,6 +26,7 @@ function solveQuadrat() {
     let x2 = (-b - sqrtDiscriminant) / (2 * a);
 
     stdout.write(`Два корня уравнения: ${x1} и ${x2}`);
+	process.exit(0);
   }
 }
 
