@@ -1,7 +1,12 @@
 const process = require('node:process');
 const { stderr, stdout, argv } = require('node:process');
 
+
+
+
+
 function solveQuadrat() {
+  
   const [a, b, c] = argv.slice(-3);
   if (isNaN(a) || isNaN(b) || isNaN(c)) {
     stderr.write(
@@ -31,3 +36,4 @@ function solveQuadrat() {
 }
 
 solveQuadrat();
+
