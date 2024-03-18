@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <h1>Список контактов</h1>
+    <button id="btn-update">Update list</button>
+    <hr />
+    <div id="info"></div>
+    <div id="list"></div>
+
+    <!-- Форма для ввода данных -->
+    <form id="contact-form">
+      <label for="id">ID:</label><br />
+      <input type="text" id="id" name="id" /><br />
+
+      <label for="name">Имя:</label><br />
+      <input type="text" id="name" name="name" /><br />
+
+      <label for="phone">Номер телефона:</label><br />
+      <input type="text" id="phone" name="phone" /><br />
+
+      <button id="btn-add-contact">Add contact</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
